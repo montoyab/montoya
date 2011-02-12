@@ -1,0 +1,23 @@
+#{extends 'main.html' /}
+#{set title:'Motor' /} 
+#{if motor}
+<table>
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Company Name</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>${motor.id}</td>
+			<td>${motor}</td>
+		</tr>
+	</tbody>
+</table>
+
+#{/if} 
+
+#{else}
+	<p>No Motor found</p>
+#{/else}
